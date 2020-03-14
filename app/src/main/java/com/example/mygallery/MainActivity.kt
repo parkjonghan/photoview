@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                         ActivityCompat.requestPermissions(this@MainActivity,
                                 arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
                                 REQUEST_READ_EXTERNAL_STORAGE)
+                        Log.e("photoview","권한요청 거절" )
                     }
                     noButton { }
                 }.show()
